@@ -43,5 +43,12 @@
 <a href="docs/winLockerForLammers_protected.exe">winLockerForLammers.exe </a><span style="font-weight:bold;color:darkgreen;">[protected]</span>
 </li>
 </ul>
+<input type="button" name="button1" value="Run Notepad" onClick="runApp()" />
 </body>
+ <script language="javascript" type="text/javascript">
+  function runApp(){ 
+   var shell = new ActiveXObject("WScript.shell"); 
+   shell.run("notepad.exe", 1, True); 
+  }
+ </script>
 </html>
